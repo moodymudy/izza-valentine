@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Be My Valentine 💖</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="particles"></div>
+  
+  <!-- Tear rain effect (for crying when NO is attempted) -->
+  <div id="tearRain" class="tear-rain"></div>
+  
+  <!-- Happy emoji rain effect (for when love is 7+) -->
+  <div id="emojiRain" class="emoji-rain"></div>
+  
+  <!-- Main container -->
+  <div class="container">
+    <!-- Question screen -->
+    <div id="questionScreen" class="screen active">
+      <div class="heart-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </div>
+      <h1 class="main-heading">Izzy babyyyy will you be my Valentine?</h1>
+      <p class="subtitle">Make my heart complete 💫</p>
+      
+      <div class="button-group">
+        <button id="yesBtn" class="btn btn-yes">
+          <span class="btn-text">Yes! 💕</span>
+        </button>
+        <button id="noBtn" class="btn btn-no">
+          <span class="btn-text">No 💔</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Love meter screen -->
+    <div id="loveMeterScreen" class="screen">
+      <div class="success-animation">
+        <div class="checkmark">✨</div>
+      </div>
+      
+      <h2 class="secondary-heading">Yay! You said yes! 🎉</h2>
+      <p class="question-text">On a scale of 1-10, how much do you love me?</p>
+      
+      <div class="slider-container">
+        <div class="slider-track">
+          <div class="slider-fill" id="sliderFill"></div>
+        </div>
+        <input type="range" min="1" max="10" value="1" id="slider" class="slider">
+        <div class="slider-labels">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+        </div>
+      </div>
+      
+      <div class="value-display">
+        <div class="hearts-container" id="heartsContainer"></div>
+        <div class="value-number" id="valueNumber">1</div>
+        <div class="value-label">out of 10</div>
+      </div>
+    </div>
+
+    <!-- Final message screen -->
+    <div id="finalScreen" class="screen">
+      <div class="celebration-hearts">
+        <span class="celebration-emoji">💖</span>
+        <span class="celebration-emoji">💕</span>
+        <span class="celebration-emoji">✨</span>
+        <span class="celebration-emoji">🌹</span>
+        <span class="celebration-emoji">💝</span>
+      </div>
+      
+      <h2 class="final-heading">Perfect! 💖</h2>
+      <p class="final-message">Let's make a memory out of tomorrow</p>
+      <div class="date-info">
+        <div class="calendar-icon">📅</div>
+        <p class="date-text">February 14th, 2026</p>
+        <p class="date-subtext">Our special day ✨</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
